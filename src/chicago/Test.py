@@ -28,6 +28,8 @@ class Test(unittest.TestCase):
             for row in reader:
                 zip.append(row['zip'])   
         self.assertFalse(not zip)
+        self.assertTrue('90210' in zip)
+        self. assertFalse('Lower School' in zip)
 
 
 if __name__ == "__main__":

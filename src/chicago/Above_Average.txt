@@ -7,4 +7,4 @@ Whitney M Young Magnet High School, ARRIGO (VICTOR), COMMUNITY PARK
 Robert Lindblom Math & Science Academy HS, OAKLEY, MINI-PARK
 
 Number of Each Type of Park:
-('Community Parks: ', 1, 'Mini-Parks: ', 3, 'Neighborhood Parks: ', 1, 'Unimproved: ', 0)
+('Community Parks: ', 9, 'Mini-Parks: ', 11, 'Neighborhood Parks: ', 10, 'Unimproved: ', 2)

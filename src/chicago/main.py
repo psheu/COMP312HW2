@@ -6,7 +6,6 @@ Created on Jun 12, 2016
 
 import csv
 
-
 #read CPS report
 CPSReport = open('Chicago_Public_Schools___High_School_Progress_Report_Card__2012-2013_.csv')
 csv_CPSReport = csv.reader(CPSReport)
@@ -93,27 +92,29 @@ f2 = open("Above_Average.txt", "w")
 indices2 = [i for i, x in enumerate(school_performance) if x == "Far Above Average" or  x == "Above Average"]
 #print (indices)
 
-cp = 0
-mp = 0
-np = 0
-ui = 0
+cp2 = 0
+mp2 = 0
+np2 = 0
+ui2 = 0
 #compare schools performign above average and type of park 
 for i in indices2:
     if school_zip[i] in park_zip:
         j = park_zip.index(school_zip[i])
         if park_class[j] == "COMMUNITY PARK":
-            cp += 1 
+            cp2 += 1 
         elif park_class[j] == "MINI-PARK":
-            mp += 1
+            mp2 += 1
         elif park_class[j] == "NEIGHBORHOOD PARK":
-            np += 1
+            np2 += 1
         elif park_class[j] == "UNIMPROVED":
-            ui += 1
+            ui2 += 1
         line = school[i], ", ", park[j], ", ", park_class[j], "\n"
         f2.writelines(line)
 f2.writelines("\nNumber of Each Type of Park:\n")
 count = "Community Parks: ", cp, "Mini-Parks: ", mp, "Neighborhood Parks: ", np, "Unimproved: ", ui
 f2.writelines(str(count))
 f2.close()
+
+
         
 
