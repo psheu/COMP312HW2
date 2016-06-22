@@ -80,6 +80,7 @@ for i in indices:
             ui += 1
         line = school[i], ", ", park[j], ", ", park_class[j], "\n"
         f1.writelines(line)
+f1.writelines("\nNumber of Each Type of Park:\n")
 count = "Community Parks: ", cp, "Mini-Parks: ", mp, "Neighborhood Parks: ", np, "Unimproved: ", ui
 f1.writelines(str(count))
 f1.close()
@@ -110,6 +111,7 @@ for i in indices2:
             ui += 1
         line = school[i], ", ", park[j], ", ", park_class[j], "\n"
         f2.writelines(line)
+f2.writelines("\nNumber of Each Type of Park:\n")
 count = "Community Parks: ", cp, "Mini-Parks: ", mp, "Neighborhood Parks: ", np, "Unimproved: ", ui
 f2.writelines(str(count))
 f2.close()
