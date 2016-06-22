@@ -48,9 +48,9 @@ for row in csv_parksReport:
 #f.close()
 
 #write park data to file
-with open("park_data.txt", "w") as f1:
-    f1.writelines(map("{}, {}, {}\n".format, park, park_zip, park_class))
-f1.close()
+#with open("park_data.txt", "w") as f1:
+    #f1.writelines(map("{}, {}, {}\n".format, park, park_zip, park_class))
+#f1.close()
 
 
 #wrie new file documenting schools performing far below average and type of park
