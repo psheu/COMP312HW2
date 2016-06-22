@@ -20,8 +20,16 @@ class Test(unittest.TestCase):
     
     def test1(self):
         self.assertFalse(os.stat("names.csv").st_size == 0)
-        
-        
+    
+    def test2(self):
+        zip = []
+        with open('names.csv') as csvfile:
+            reader = csv.DictReader(csvfile)
+            for row in reader:
+                zip.append(row['zip'])   
+        self.assertFalse(not zip)
+
+
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']
     unittest.main()
